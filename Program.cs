@@ -78,3 +78,41 @@ else
 8 -> 2, 4, 6, 8
 */
 
+/*
+Console.Write("Input your numder N: "); //первый вариант решения задачи
+int num = Convert.ToInt32(Console.ReadLine());
+
+int a = 1;
+
+if (num <= 1)
+{
+    Console.WriteLine("Your number must be greater than 1");
+}
+else
+    while (a <= num)
+        if (a % 2 == 0)
+        {
+            Console.Write(a + " ");
+            a++;
+        }
+        else
+        {
+            a++;
+        }
+*/
+
+Console.Write("Input your numder N: "); //второй вариант решения задачи
+int num = Convert.ToInt32(Console.ReadLine());
+
+int a = 2;
+
+if (num <= 1)
+{
+    Console.WriteLine("Your number must be greater than 1");
+}
+else
+    while (a <= num)
+    {
+        Console.Write(a + " ");
+        a = a + 2;
+    }
